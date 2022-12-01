@@ -989,7 +989,7 @@ pre .javascript .function {
   position: relative;
 }
 .brand:hover {
-  color: var(--brand-hover-color);
+  color: var(--brand-color);
 }
 .site-title {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -1179,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff42;
+  background: #ab39ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2363,13 +2363,13 @@ hr {
 }
 .sidebar a,
 .sidebar span.exturl {
-  border-bottom-color: #555;
-  color: #999;
+  border-bottom-color: #0010cc;
+  color: #0010cc;
 }
 .sidebar a:hover,
 .sidebar span.exturl:hover {
-  border-bottom-color: #eee;
-  color: #eee;
+  border-bottom-color: #0010cc;
+  color: #0010cc;
 }
 .links-of-blogroll-item {
   padding: 2px 10px;
