@@ -19,7 +19,7 @@
 
   <meta name="description" content="如题，今天给大家带来背景的加入">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于如何给HEXO的NexT主题加入背景">
+<meta property="og:title" content="关于如何给 HEXO 的 NexT 主题加入背景">
 <meta property="og:url" content="http://example.com/2022/12/01/%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E7%BB%99HEXO%E7%9A%84NexT%E4%B8%BB%E9%A2%98%E5%8A%A0%E5%85%A5%E8%83%8C%E6%99%AF/index.html">
 <meta property="og:site_name" content="XIAOLU">
 <meta property="og:description" content="如题，今天给大家带来背景的加入">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>关于如何给HEXO的NexT主题加入背景 | XIAOLU</title>
+  <title>关于如何给 HEXO 的 NexT 主题加入背景 | XIAOLU</title>
   
 
 
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          关于如何给HEXO的NexT主题加入背景
+          关于如何给 HEXO 的 NexT 主题加入背景
         </h1>
 
         <div class="post-meta">
@@ -188,6 +188,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -199,15 +206,21 @@
 
       
         <p>如题，今天给大家带来背景的加入<br>         <span id="more"></span> </p>
-<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><p>1.找到你喜欢的照片扔到【themes&#x2F;next&#x2F;source&#x2F;images】文件夹内</p>
-<p>2.在【themes\next\source\css】中新建【_custom】文件夹，在文件夹下新建   【style.styl】文件。</p>
+<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ol>
+<li><p>找到你喜欢的照片扔到【themes&#x2F;next&#x2F;source&#x2F;images】文件夹内</p>
+</li>
+<li><p>在【themes\next\source\css】中新建【_custom】文件夹，在文件夹下新建   【style.styl】文件。</p>
+</li>
+</ol>
 <p>3.【style.styl】文件中写入</p>
 <blockquote>
-<p>body {<br>background: url(背景图片的文件位置或者链接);<br>background-repeat: no-repeat;&#x2F;&#x2F; 设定背景图片非重复填充<br>background-attachment: fixed;&#x2F;&#x2F; 设置背景图片不随页面滚动<br>background-position: 50% 50%;&#x2F;&#x2F; 设置背景图片位置，100%强制拉伸<br>background-size: cover&#x2F;&#x2F;<br>}</p>
+<p>body {<br>background: url (背景图片的文件位置或者链接);<br>background-repeat: no-repeat;&#x2F;&#x2F; 设定背景图片非重复填充<br>background-attachment: fixed;&#x2F;&#x2F; 设置背景图片不随页面滚动<br>background-position: 50% 50%;&#x2F;&#x2F; 设置背景图片位置，100% 强制拉伸<br>background-size: cover&#x2F;&#x2F;<br>}</p>
 </blockquote>
-<p>4.找到【themes\next\source\css\main.styl】，在最后写入</p>
+<ol start="4">
+<li>找到【themes\next\source\css\main.styl】，在最后写入</li>
+</ol>
 <blockquote>
-<p>&#x2F;&#x2F; Custom Layer<br>&#x2F;&#x2F; ————————————————–<br>for $inject_style in hexo-config(‘style.styl’)<br>  @import “_custom&#x2F;style.styl”</p>
+<p>&#x2F;&#x2F; Custom Layer<br>&#x2F;&#x2F;————————————————–<br>for $inject_style in hexo-config (‘style.styl’)<br>  @import “_custom&#x2F;style.styl”</p>
 </blockquote>
 <h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>到这里就大功告成了！开香槟</p>
 <p><img src="http://img1.ali213.net/glpic/2022/10/12/584_2022101245124310.jpg"></p>
@@ -356,6 +369,26 @@
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
